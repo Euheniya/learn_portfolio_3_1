@@ -1,0 +1,25 @@
+.sidepanel {
+    position: absolute;
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transform: rotate(-90deg);
+    top: 370px;
+    left: -50px;
+    &__link {
+        &:hover {
+            svg path {
+                fill: white;
+            }
+        }
+    }
+    &__devider {
+        background-color:black;
+        height: 1px;
+        width: 70px;
+    }
+    
+}
+
