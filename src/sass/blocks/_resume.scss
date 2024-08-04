@@ -1,0 +1,93 @@
+.resume {
+    padding-top: 120px;
+    &__subtitle {
+        @include before_circle;
+        position: relative;
+        z-index: 2;
+        &:before {
+            left: calc(50% - 18px);
+        }
+        text-align: center;
+    }
+    &__title {
+        text-align: center;
+        padding-top: 6px;
+        padding-bottom: 25px;
+    }
+    &__devider {
+        margin: 0 auto;
+        
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        column-gap: 135px;
+        row-gap: 45px;
+        padding: 60px 90px 0 80px;
+    }
+    &__items {
+        padding-left: 35px;
+        @include before_list;
+            position: relative;
+            z-index: 2;
+            
+        
+        ul {
+            &:before {
+                content: '';
+                position: absolute;
+                border: 1px solid #000;
+                width: 0px;
+                height: 365px;
+                z-index: -3;
+                top: 30px;
+                left: -8px;
+            }
+        }
+    }
+    &__list {
+        list-style-type: none;
+        margin-bottom: 0;
+        
+    }
+    &__item {
+        position: relative;
+        //margin-bottom: 45px;
+        &:before {
+            content: '';
+            position: absolute;
+            border: 1px solid #000;
+            width: 42px;
+            height: 0px;
+            z-index: -1;
+            top: 16px;
+            left: -42px;
+            
+        }
+        margin-top: 45px;
+        &_icon {
+            @include before_circle;
+            position: relative;
+            z-index: 2;
+            &:before {
+                left: 0;
+                top: 0;
+            }
+            img {
+                position: absolute;
+                top: 16px;
+                left: 16px;
+            }
+        }
+    }
+    &__header {
+        display: grid;
+        grid-template-columns: 40px 315px;
+        column-gap: 20px;
+    }
+    &__descr {
+        margin-top: 12px;
+    }
+    
+}

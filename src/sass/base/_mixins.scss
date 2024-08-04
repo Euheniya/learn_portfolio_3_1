@@ -12,3 +12,16 @@
     }
 
 }
+@mixin before_list {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: $main-color;
+        border-radius: 100%;
+        z-index: -1;
+        left: -15px;
+        top: 22px;
+    }
+}
