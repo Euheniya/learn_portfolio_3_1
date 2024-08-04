@@ -58,6 +58,13 @@
         justify-content: space-between;
         bottom: 50px;
         left: calc(50% - 45px);
+        a {
+            &:hover {
+                svg path {
+                    fill: white;
+                }
+            }
+        }
     }
     &__list {
         list-style-type: none;
