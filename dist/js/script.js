@@ -11,8 +11,8 @@ closeElem.addEventListener('click', () => {
 
 });
 
-const counters = document.querySelectorAll('.skills__head_descr'),
-      lines = document.querySelectorAll('.skills__line_orange');
+const counters = document.querySelectorAll('.skills__procent'),
+    lines = document.querySelectorAll('.skills__line span');
 
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
