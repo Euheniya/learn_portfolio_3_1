@@ -17,5 +17,18 @@
         font-weight: 700;
         font-size: 20px;
     }
-    
+    &__section-title {
+        text-align: center;
+        padding-top: 6px;
+        padding-bottom: 25px;
+    }
+    &__section-subtitle {
+        @include before_circle;
+        position: relative;
+        z-index: 2;
+        &:before {
+            left: calc(50% - 18px);
+        }
+        text-align: center;
+    }
 }

@@ -1,19 +1,5 @@
 .resume {
     padding-top: 120px;
-    &__subtitle {
-        @include before_circle;
-        position: relative;
-        z-index: 2;
-        &:before {
-            left: calc(50% - 18px);
-        }
-        text-align: center;
-    }
-    &__title {
-        text-align: center;
-        padding-top: 6px;
-        padding-bottom: 25px;
-    }
     &__devider {
         margin: 0 auto;
         

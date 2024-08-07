@@ -1,5 +1,5 @@
 .sidepanel {
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 340px;
     justify-content: space-between;
@@ -7,7 +7,7 @@
     z-index: 2;
     transform: rotate(-90deg);
     top: 370px;
-    left: -50px;
+    left: 50px;
     &__link {
         &:hover {
             svg path {
