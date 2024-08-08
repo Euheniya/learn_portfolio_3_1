@@ -82,6 +82,15 @@
     .hamburger {
         right: 20px;
     }
+    
+    .menu {
+        &__block {
+            width: 250px;
+        }
+        &__list {
+            padding-left: 20px;
+        }
+    }
     .promo {
         background: url('../img/Background.jpg') no-repeat 57% / cover;
         &__title {
@@ -92,12 +101,12 @@
         }
         
     }
-    .menu {
-        &__block {
-            width: 250px;
+    .about {
+        &__skills {
+            margin-right: 40px;
         }
-        &__list {
-            padding-left: 20px;
+        &__items {
+            column-gap: 24px;
         }
     }
 }
