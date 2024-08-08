@@ -17,7 +17,7 @@
         }
     }
     .about {
-        padding: 40px 0;
+        
         &__container {
             grid-template-columns: 400px 540px;
             column-gap: 20px;
@@ -29,6 +29,13 @@
             column-gap: 20px;
         }
     }
+    .resume {
+        &__wrapper {
+            column-gap: 80px;
+            padding: 60px 50px 0 50px;
+        }
+    }
+    
 }
 
 @media (max-width: 992px) {
@@ -36,6 +43,7 @@
         max-width: 720px;
     }
     .about {
+        padding-top: 40px;
         &__container {
             grid-template-columns: repeat(2, 350px);
         }
@@ -50,12 +58,31 @@
             font-size: 24px;
         }
      }
+     .resume {
+        padding-top: 40px;
+        &__wrapper {
+            column-gap: 50px;
+            padding: 60px 10px 0 10px;
+            grid-template-columns: repeat(2, 325px);
+        }
+        &__items {
+            ul {
+                &:before {
+                    height: 400px;
+                }
+            }
+        }
+        .title__section-title {
+            font-size: 24px;
+        }
+     }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
     }
+    
     .about {
         padding-bottom: 0;
         &__container {
@@ -72,6 +99,32 @@
             grid-template-rows: minmax(60px, auto);
         }
     }
+    .resume {
+        .title__section-title {
+            padding: 20px 0 15px 0;
+        }
+        &__wrapper {
+            padding-top: 40px;
+            display: block;
+        }
+        &__items {
+            padding-left: 43px;
+           /// padding-bottom: 40px;
+            ul {
+                &:before {
+                    height: 260px;
+                }
+            }
+        }
+        &__item {
+            margin-top: 10px;
+            &:before {
+                left: -50px;
+                width: 50px;
+            }
+        }
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -108,5 +161,20 @@
         &__items {
             column-gap: 24px;
         }
+    }
+    .resume {
+        &__header {
+            grid-template-columns: 40px 190px;
+        }
+        &__items {
+            &_title {
+                margin-bottom: 35px;
+            }
+            ul {
+                &:before {
+                    height: 400px;
+                }
+            }
+       }
     }
 }
