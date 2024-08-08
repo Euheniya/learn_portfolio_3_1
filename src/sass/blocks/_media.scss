@@ -7,13 +7,26 @@
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
+        
     }
-    
     .promo {
         &__title {
             width: 400px;
             font-size: 36px;
             line-height: 50px;
+        }
+    }
+    .about {
+        padding: 40px 0;
+        &__container {
+            grid-template-columns: 400px 540px;
+            column-gap: 20px;
+        }
+        &__wrapper {
+            margin-right: 0;
+        }
+        &__skills {
+            column-gap: 20px;
         }
     }
 }
@@ -22,11 +35,42 @@
     .container {
         max-width: 720px;
     }
+    .about {
+        &__container {
+            grid-template-columns: repeat(2, 350px);
+        }
+        &__skills {
+            grid-template: repeat(3, 1fr) / 1fr;
+        }
+        &__items {
+            grid-template-columns: 40px 1fr;
+            grid-template-rows: minmax(90px, auto);
+        }
+        &__title {
+            font-size: 24px;
+        }
+     }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
+    }
+    .about {
+        padding-bottom: 0;
+        &__container {
+            display: block;
+            width: 100%;
+        }
+        &__photo {
+            margin-bottom: 40px;
+        }
+        &__title {
+            margin: 20px 0 10px 0;
+        }
+        &__items {
+            grid-template-rows: minmax(60px, auto);
+        }
     }
 }
 
