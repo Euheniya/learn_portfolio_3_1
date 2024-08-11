@@ -6,10 +6,10 @@
     &__wrapper {
         padding: 0 50px;
         display: grid;
-        grid-template: repeat(3, minmax(45px,auto)) / repeat(2, 1fr);
+        grid-template: repeat(3, minmax(45px,auto)) / repeat(2, 365px);
         grid-auto-rows: minmax(45px,auto);
         row-gap: 15px;
-        column-gap: 305px;
+        //column-gap: 305px;
         justify-content: space-between;
     }
     &__header {

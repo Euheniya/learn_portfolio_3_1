@@ -101,7 +101,7 @@
         .title__section-title {
             font-size: 24px;
         }
-    }
+     }
     .skills {
         
         &__wrapper {
@@ -112,7 +112,14 @@
             width: 100%;
         }
     }
-     
+    .price {
+        padding-top: 120px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 350px);
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -176,6 +183,18 @@
         padding-top: 40px;
         &__wrapper {
             padding-top: 40px;
+        }
+    }
+    .price {
+        padding-top: 40px;
+        &__devider {
+            margin: 20px auto;
+        }
+        &__wrapper {
+            row-gap: 20px;
+        }
+        &__item {
+            padding-bottom: 0;
         }
     }
     .title {
@@ -252,5 +271,13 @@
         &__header {
             margin-bottom: 28px;
         }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 295px);
+            
+        }
+       
+        
     }
 }
