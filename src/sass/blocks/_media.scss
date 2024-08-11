@@ -37,14 +37,28 @@
     }
     .skills {
         &__items {
-            grid-template-columns: repeat(3, 270px);
-            margin: 60px 55px 120px 55px;
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
         }
         &__wrapper {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, 350px);
+            justify-content: space-between;
          }
-        &__line {
-            width: 457px;
+        
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: center;
+            grid-auto-rows: 280px;
+        }
+        .vertical {
+            grid-row: unset;
+            grid-column: unset;
+        }
+        .horizontal {
+            grid-column: unset;
+            grid-row: unset;
         }
     }
     
@@ -70,7 +84,7 @@
             font-size: 24px;
         }
      }
-     .resume {
+    .resume {
         padding-top: 40px;
         &__wrapper {
             column-gap: 50px;
@@ -87,17 +101,18 @@
         .title__section-title {
             font-size: 24px;
         }
-     }
-     .skills {
-        &__items {
-            grid-template-columns: repeat(2, 270px);
-            gap: 20px;
-            justify-content: center;
-        }  
+    }
+    .skills {
+        
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: space-between;
+        }
         &__line {
-            width: 335px;
-        } 
-     }
+            width: 100%;
+        }
+    }
+     
 }
 
 @media (max-width: 768px) {
@@ -149,18 +164,19 @@
     .skills {
         padding-top: 40px;
         &__items {
-           // grid-template-columns:270px; 
             margin: 20px 15px 40px 15px;
-            gap: 10px;
-        }
+            justify-content: center;
+            }
         &__wrapper {
-            grid-template-columns: 1fr;
-            row-gap: 40px;
+            grid-template-columns: repeat(auto-fit, 100%);
+               
+            }
+    }
+    .portfolio {
+        padding-top: 40px;
+        &__wrapper {
+            padding-top: 40px;
         }
-        &__line {
-            width: 540px;
-        }
-       
     }
     .title {
         &__section-title {
@@ -191,7 +207,7 @@
         }
     }
     .promo {
-        background: url('../img/Background.jpg') no-repeat 57% / cover;
+        background: url('../img/background_min.png') no-repeat 100% / cover;
         &__title {
             width: 300px;
             font-size: 26px;
@@ -225,15 +241,10 @@
     }
     .skills {
         &__items {
-            grid-template-columns:270px;
-            margin: 20px 27px 40px 23px;
             gap: 20px;
         }
         &__wrapper {
-            grid-template-columns: 1fr;
-        }
-        &__line {
-            width: 300px;
+            gap: 40px;
         }
         &__progress {
             height: 70px;
